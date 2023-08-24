@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.timer-container {
+  text-align: center;
+}
+
+.time {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
