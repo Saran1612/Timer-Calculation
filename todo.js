@@ -37,25 +37,13 @@ const Todo = () => {
 
       <div>
         <ul>
-          {/* {dataArr.map((item, index) => (
-            <li
-              key={index}
-              style={{ display: 'flex', justifyContent: 'start' }}
-            >
-              <p>{item.task} </p>
-              <button onClick={() => handleEdit(item.id)}>Edit</button>
-              <button onClick={() => handleDelete(item.id)}>Delete</button>
-            </li>
-          ))} */}
           {dataArr.map((item) => (
             <li
               key={item.id}
               style={{ display: 'flex', justifyContent: 'start' }}
             >
               <p>{item.task} </p>
-              <button onClick={() => handleEdit(item.id)}>
-                {ID === item.id ? 'Update' : 'Edit'}
-              </button>
+              {/* <button onClick={() => handleEdit(item.id)}>Edit</button> */}
               <button onClick={() => handleDelete(item.id)}>Delete</button>
             </li>
           ))}
